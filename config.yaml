@@ -1,0 +1,2 @@
+crypto_id: bitcoin # The ID of the cryptocurrency as recognized by the CoinGecko API (e.g., bitcoin, ethereum, dogecoin).
+vs_currency: usd # The currency code in which to display the price (e.g., usd, eur, gbp).

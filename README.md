@@ -16,6 +16,7 @@ This project is a simple Python script to fetch and log the current Bitcoin pric
 
 - `get_price.py` — Python script to fetch and print the Bitcoin price
 - `requirements.txt` — Python dependencies
+- `config.yaml` —  Specify which cryptocurrency to track and in what currency to display the price
 - `.github/workflows/weekly_crypto_price_logger.yml` — GitHub Actions workflow to run the script manually
 
 ---
@@ -34,7 +35,7 @@ This project is a simple Python script to fetch and log the current Bitcoin pric
 
     On **Windows**:
     ```bash
-    python -m venv venv
+    python -m venv venv OR py -3.12 -m venv venv (if you have a specific version)
     .\venv\Scripts\Activate.ps1
 
 4. Install dependencies
@@ -67,9 +68,9 @@ The workflow is defined in `.github/workflows/price.yml` and consists of:
     - Run script: Executes `get_price.p`y to fetch and log the current Bitcoin price.
 
 ### How to Run the Workflow Manually
-- Go to this repository’s Actions tab.
+- Go to this repository’s `Actions tab`.
 - Select the Weekly Crypto Price Logger workflow.
-- Click Run workflow to trigger it manually.
+- Click `Run workflow` to trigger it manually.
 
 ### Notes
 The workflow previously included a schedule to run automatically every Sunday at midnight UTC, but this was removed to allow manual runs only.
